@@ -19,4 +19,9 @@ api.delete('/cliente/:clienteId', clienteCtrl.deleteClient);
 api.post('/nuevoproducto', productoCtrl.saveProduct);
 api.get('/producto', productoCtrl.getProduct);
 
+//**********Routes TEST ***********
+api.get('/test', async (req, res) => {
+    res.json({message: 'pass!'})
+})
+
 module.exports = api;
