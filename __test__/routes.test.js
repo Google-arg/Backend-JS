@@ -11,3 +11,11 @@ const request = supertest(app)
     // ...
     done()
   })
+
+  it('gets the test endpoint two', async done => {
+    const response = await request.get('/test')
+  
+    expect(response.status).toBe(200)
+    expect(response.body.message).toBe('pass!')
+    done()
+  })
