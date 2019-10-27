@@ -26,6 +26,16 @@ it('gets the test endpoint pedido', async done => {
     done()
 })
 
+
+//    no entra a la bd
+/* it('gets the test endpoint cliente', async done => {
+    const response = await request.get('/cliente')
+    console.log('xxxxxxx ', response.text)
+    //expect(response.status).toBe(200)
+    //expect(response.text).toBe('Error en la peticion')
+    done()
+}) */
+    
 describe('Test the connection BD', () => {
     beforeAll(() => {
         mongoDB.connect();
@@ -34,14 +44,4 @@ describe('Test the connection BD', () => {
     afterAll((done) => {
         mongoDB.disconnect(done);
     });
-//done()
 })
-/*
-describe('Test the root path cliente', () => {
-    test('It should response the GET method', async (done) => {
-        await request.get('/cliente')  
-        expect(200).toBe(200)
-        done()
-    }); 
-})
-*/

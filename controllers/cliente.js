@@ -3,11 +3,12 @@ const Cliente = require('../models/Client');
 const getClients = (req, res) =>{
     Cliente.find({}, (err, clientes)=>{
         if(err)return res.status(500).send({mesage:`error al hacer la peticion ${err}`})
-        if(!clientes) return res.status(404).send({mesage: `no exite el cliente`})
+        if(!clientes) return res.status(404).send({mesage: `no hay clientes`})
         //res.send(200, {clientes}) deprecado
         res.status(200).send({clientes})
     })
-}
+    //res.status(550).send('no esta entrando a la bd')
+} 
 
 const saveClient = (req, res) =>{
     console.log(req.body)
