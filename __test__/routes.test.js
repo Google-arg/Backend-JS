@@ -34,11 +34,14 @@ describe('Test the connection BD', () => {
     afterAll((done) => {
         mongoDB.disconnect(done);
     });
+//done()
 })
-
+/*
 describe('Test the root path cliente', () => {
-    test('It should response the GET method', () => {
-        request.get('/cliente')  
+    test('It should response the GET method', async (done) => {
+        await request.get('/cliente')  
         expect(200).toBe(200)
-    });
+        done()
+    }); 
 })
+*/
