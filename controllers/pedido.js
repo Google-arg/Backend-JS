@@ -15,7 +15,7 @@ const saveOrder = (req, res) =>{
     })
 }
 
-const getOrders = (req, res) =>{
+const getOrders = (req, res) => {
     Pedido
         .find({})
         .populate('Client Product')
@@ -26,6 +26,8 @@ const getOrders = (req, res) =>{
                 res.status(200).send({pedidos});
             } 
         )
+        //probando para el testing la siguiente linea
+        res.status(500).send(`Error en la peticion`)
 }
 
 const deleteOrder = (req, res) =>{
