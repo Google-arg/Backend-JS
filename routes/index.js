@@ -23,5 +23,8 @@ api.get('/producto', productoCtrl.getProduct);
 api.get('/test', async (req, res) => {
     res.json({message: 'pass!'})
 })
+api.get('/', async (req, res) => {
+    res.status(200).json({message: 'Bienvenido!'})
+})
 
 module.exports = api;
