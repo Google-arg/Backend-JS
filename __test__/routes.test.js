@@ -1,4 +1,4 @@
-const app = require('../App');
+/* const app = require('../App');
 const supertest = require('supertest');
 const request = supertest(app);
 const {MongoClient} = require('mongodb');
@@ -86,3 +86,4 @@ describe('insert', () => {
     });
 });
  
+ */
