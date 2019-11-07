@@ -9,7 +9,6 @@ cache:
     - "node_modules"
 services:
 - mongodb
-<<<<<<< HEAD
 
 notifications:
   slack: ifts16workspace:AH2sLmsNN2siKON8WbTs4prv
@@ -19,7 +18,3 @@ notifications:
 #  slack:
 #    rooms:
 #      - ifts16workspace:5iJkQ3l5dhBtFImJ01PNAtku#seminario
-=======
-notifications:
-  slack: ifts16workspace:AH2sLmsNN2siKON8WbTs4prv
->>>>>>> 9d818adbbfc311f66c0ae342ccafea16ece4f0b8
