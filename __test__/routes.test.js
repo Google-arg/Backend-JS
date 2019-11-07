@@ -68,7 +68,7 @@ it('gets the test endpoint pedido', async done => {
 
 
 
-/* 
+
 describe('insert', () => {
     let connection;
     let db;
@@ -86,4 +86,3 @@ describe('insert', () => {
     });
 });
  
-    */
