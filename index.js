@@ -24,6 +24,12 @@ mongoose.connect(config.db, configMongoose,(err, res)=>{
     });
 });
 
+
+
+
+
+
+
 /* --------- Config para un solo archivo .env
 
     if(process.env.NODE_ENV === "development") require('dotenv').config();

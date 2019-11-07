@@ -13,7 +13,6 @@ api.delete('/pedido/:pedidoId', pedidoCtrl.deleteOrder);
 api.get('/cliente', clienteCtrl.getClients);
 api.post('/cliente', clienteCtrl.saveClient);
 api.delete('/cliente/:clienteId', clienteCtrl.deleteClient);
-//api.put('/cliente/:clienteId', clienteCtrl.updateClient);
 
 //**********Routes producto ***********
 api.post('/nuevoproducto', productoCtrl.saveProduct);
