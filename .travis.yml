@@ -10,3 +10,13 @@ cache:
 services:
 - mongodb
 
+<<<<<<< HEAD
+=======
+notifications:
+  slack: ifts16workspace:AH2sLmsNN2siKON8WbTs4prv
+
+#notifications:
+#  slack:
+#    rooms:
+#      - ifts16workspace:5iJkQ3l5dhBtFImJ01PNAtku#seminario
+>>>>>>> 2bc6cafff6455cfba7e1b7379c6d5fe5057e67dd
