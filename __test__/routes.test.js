@@ -1,10 +1,20 @@
-/* const app = require('../App');
+const app = require('../App');
 const supertest = require('supertest');
 const request = supertest(app);
 const {MongoClient} = require('mongodb');
 const mongoose = require('mongoose');
 const config = require('../config')
 
+it('gets the test endpoint pedido', async done => {
+    const response = await request.get('/pedido')
+    //console.log('xxxxxxx ', response)
+    expect(response.status).toBe(500)
+    expect(response.text).toBe('Error en la peticion')
+    done()
+})
+
+
+/*
 process.env.NODE_ENV = 'test';
 
 const getRoute = route => `http://localhost:8080${route}`
