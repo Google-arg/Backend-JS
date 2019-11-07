@@ -66,31 +66,14 @@ it('gets the test endpoint pedido', async done => {
     done()
 })
 
-<<<<<<< HEAD
 describe('Test the connection BD', () => {
     beforeAll(() => {
         mongoDB.connect();
-=======
-
-
-
-describe('insert', () => {
-    let connection;
-    let db;
-  
-    beforeAll(async () => {
-      connection = await MongoClient.connect(process.env.MONGO_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-      });
-      db = await connection.db();
->>>>>>> 2bc6cafff6455cfba7e1b7379c6d5fe5057e67dd
     });
 
     afterAll(async () => {
       await connection.close();
     });
-<<<<<<< HEAD
 //done()
 })
 /*
@@ -102,8 +85,3 @@ describe('Test the root path cliente', () => {
     }); 
 })
 */
-=======
-});
- 
- */
->>>>>>> 2bc6cafff6455cfba7e1b7379c6d5fe5057e67dd
