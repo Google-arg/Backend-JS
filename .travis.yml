@@ -13,6 +13,7 @@ services:
 notifications:
   slack: ifts16workspace:AH2sLmsNN2siKON8WbTs4prv
 
+#prueba40
 #notifications:
 #  slack:
 #    rooms:
