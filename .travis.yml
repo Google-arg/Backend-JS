@@ -9,5 +9,4 @@ cache:
     - "node_modules"
 services:
 - mongodb
-notifications:
-  slack: ifts16workspace:AH2sLmsNN2siKON8WbTs4prv
+
